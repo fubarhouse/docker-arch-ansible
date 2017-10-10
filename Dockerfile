@@ -11,10 +11,10 @@ RUN pacman --noconfirm -S sudo && \
     echo "docker ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # Install our programs
-RUN pacman --noconfirm -S \
-    zsh wget file patch diffutils htop \
-    mlocate expac gzip tar shadow util-linux \
-    sed grep awk which
+# RUN pacman --noconfirm -S \
+#    zsh wget file patch diffutils htop \
+#    mlocate expac gzip tar shadow util-linux \
+#    sed grep awk which
 
 # Install procps without systemd.
 RUN runuser -l docker -c "yaourt --noconfirm -S procps-ng-nosystemd"
