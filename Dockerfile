@@ -1,4 +1,4 @@
-FROM pritunl/archlinux:latest
+FROM base/archlinux:latest
 
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm sudo base-devel gettext cmake git ninja boost libsodium wget python
