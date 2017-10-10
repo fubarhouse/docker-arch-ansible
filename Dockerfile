@@ -1,4 +1,4 @@
-FROM base/archlinux:latest
+FROM greyltc/archlinux:latest
 
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm sudo base-devel gettext cmake git ninja boost libsodium wget python
