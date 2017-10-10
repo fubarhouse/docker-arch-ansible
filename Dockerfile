@@ -20,7 +20,7 @@ RUN pacman --noconfirm -S sudo && \
 RUN runuser -l docker -c "yaourt --noconfirm -S procps-ng-nosystemd"
 
 # Remove build dependencies.
-RUN pacman --noconfirm -Rs yaourt binutils gcc make autoconf fakeroot git localepurge
+#RUN pacman --noconfirm -Rs yaourt binutils gcc make autoconf fakeroot git localepurge
 
 # Remove info, man and docs
 RUN rm -r /usr/share/info/* && \
